@@ -36,3 +36,52 @@ The project is capable of:
    ```bash
    git clone https://github.com/your-repo/job-apply-automation.git
    cd job-apply-automation
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Set up environment variables:
+   - Create a `.env` file in the root directory and add the following:
+     ```
+     LINKEDIN_USERNAME=your_username
+     LINKEDIN_PASSWORD=your_password
+     API_KEY=your_openai_api_key
+     ```
+4. Run the script:
+   ```bash
+   python main.py
+   ```
+
+## Usage
+1. Log in to LinkedIn using your credentials.
+2. The script will navigate to the job listings, analyze the page, and begin applying to jobs.
+3. Handles both "Easy Apply" and redirected applications to external portals.
+
+### Dynamic Field Mapping
+- Fields such as "SQL experience" or "Databases experience" are populated with predefined values. These mappings can be customized in the `fill_form_fields` function.
+
+## File Structure
+```
+├── main.py                 # Entry point for the project
+├── apply_for_jobs.py       # Logic for handling job applications
+├── initialize_driver.py    # Sets up the Selenium WebDriver
+├── login_to_linkedin.py    # Automates LinkedIn login
+├── requirements.txt        # Python dependencies
+├── .env                    # Environment variables (not included in the repository)
+├── README.md               # Project documentation
+```
+
+## Contributors
+- **Vishal Patil**: Core developer, Selenium integration, and project setup.
+- **Vidyaranya Javalgi**: OpenAI GPT-4 integration, dynamic form filling, and external portal handling.
+
+## Future Improvements
+1. Enhance GPT-based decision-making for complex forms.
+2. Add support for advanced job search filters.
+3. Integrate error recovery mechanisms for failed applications.
+4. Expand support for additional job platforms beyond LinkedIn.
+
+---
+
+Feel free to reach out with suggestions or issues!
