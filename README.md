@@ -73,8 +73,8 @@ The project is capable of:
 ```
 
 ## Contributors
-- **Vishal Patil**: Core developer, Selenium integration, and project setup.
-- **Vidyaranya Javalgi**: OpenAI GPT-4 integration, dynamic form filling, and external portal handling.
+- **Vishal Patil**
+- **Vidyaranya Javalgi**
 
 ## Future Improvements
 1. Enhance GPT-based decision-making for complex forms.
