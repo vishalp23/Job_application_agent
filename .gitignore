@@ -2,3 +2,9 @@
 __pycache__/
 *.log
 *.pyc
+*.png
+*.pdf
+
+chrome-mac-arm64/
+venv/
+resume/Vishal.pdf
